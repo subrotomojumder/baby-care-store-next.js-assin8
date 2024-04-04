@@ -1,4 +1,4 @@
-import { Button } from "@nextui-org/react";
+import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -40,13 +40,11 @@ const NotFoundPage = () => {
           Sorry about that! Please visit our home page to get where you need to
           go.
         </p>
-        <Button
-          as={Link}
-          href={"/"}
-          className="w-full lg:w-auto my-4 border rounded-md px-1 sm:px-16 py-5 bg-gradient-to-tr from-pink-500 to-yellow-500 text-white"
-        >
-          Go back Homepage
-        </Button>
+        <Link href={"/"}>
+          <Button className="w-full lg:w-auto my-4 border rounded-md px-1 sm:px-16 py-5 bg-gradient-to-tr from-pink-500 to-yellow-500 text-white">
+            Go back Homepage
+          </Button>
+        </Link>
       </div>
     </div>
   );

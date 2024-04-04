@@ -1,9 +1,13 @@
-
+import FlashSale from "@/components/HomePage/FlashSale";
+import HeroSection from "@/components/HomePage/HeroSection";
 
 const HomePage = () => {
   return (
-    <div>HomePage</div>
-  )
-}
+    <>
+      <HeroSection />
+      <FlashSale />
+    </>
+  );
+};
 
-export default HomePage
+export default HomePage;
