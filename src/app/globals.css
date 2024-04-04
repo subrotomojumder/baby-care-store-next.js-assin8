@@ -86,8 +86,8 @@
   .hero-section {
     background: linear-gradient(
         90deg,
-        rgba(32, 5, 19, 0.6),
-        rgba(32, 5, 19, 0.6)
+        rgba(32, 5, 19, 0.7),
+        rgba(32, 5, 19, 0.7)
       ),
       url(./../assets/images/hero-section-bg-sm.jpg);
   }

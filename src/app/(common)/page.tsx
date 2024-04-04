@@ -1,6 +1,7 @@
 import FlashSale from "@/components/HomePage/FlashSale";
 import HeroSection from "@/components/HomePage/HeroSection";
 import TopCategories from "@/components/HomePage/TopCategories";
+import TrendingProducts from "@/components/HomePage/TrendingProducts";
 
 const HomePage = () => {
   return (
@@ -8,6 +9,7 @@ const HomePage = () => {
       <HeroSection />
       <FlashSale />
       <TopCategories />
+      <TrendingProducts />
     </>
   );
 };

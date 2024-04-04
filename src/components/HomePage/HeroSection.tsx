@@ -19,7 +19,7 @@ import {
 import Link from "next/link";
 
 const HeroSection = async () => {
-  const res = await fetch(`${process.env.SERVER_URL}/products?limit=10`, {
+  const res = await fetch(`${process.env.SERVER_URL}/products?limit=10&sortby=createdAt&sort=des`, {
     next: {
       revalidate: 30,
     },
@@ -30,7 +30,7 @@ const HeroSection = async () => {
       <div className="hero-section w-full 10">
         <Container>
           <div className="text-center lg:text-start text-white px-10 lg:px-5">
-            <h1 className="max-w-[80ch] text-3xl lg:text-5xl font-bold leading-tight md:leading-loose">
+            <h1 className="max-w-[80ch] text-3xl lg:text-4xl font-bold leading-tight md:leading-loose">
               Navigating Baby Care with Confidence!
             </h1>
             <p className=" max-w-[90ch] font-thin mt-3 text-sm md:text-base">
@@ -89,18 +89,9 @@ const HeroSection = async () => {
                           <Button variant="outline">Details</Button>
                         </Link>
                       </div> */}
-                      <TooltipProvider>
-                        <Tooltip>
-                          <TooltipTrigger asChild>
-                            <Badge className="absolute top-5 left-5 bg-green-400">
-                              Brand New
-                            </Badge>
-                          </TooltipTrigger>
-                          <TooltipContent>
-                            <p>2 days ago!</p>
-                          </TooltipContent>
-                        </Tooltip>
-                      </TooltipProvider>
+                      <Badge className="absolute top-5 left-5 bg-green-400">
+                        Brand New
+                      </Badge>
                     </div>
                   </div>
                 </CarouselItem>

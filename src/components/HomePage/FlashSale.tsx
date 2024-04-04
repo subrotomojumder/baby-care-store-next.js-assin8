@@ -5,7 +5,7 @@ import FlashProductCard from "../ui/FlashProductCard";
 import { TProduct } from "@/types/products";
 
 const FlashSale = async () => {
-  const res = await fetch(`${process.env.SERVER_URL}/products?limit=4`, {
+  const res = await fetch(`${process.env.SERVER_URL}/products?limit=4&flashSale=true`, {
     next: {
       revalidate: 30,
     },

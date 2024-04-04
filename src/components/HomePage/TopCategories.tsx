@@ -121,6 +121,11 @@ const TopCategories = () => {
           </div>
         </div>
       </div>
+      <div className="text-center mt-10">
+        <Link href={"/products"}>
+          <Button variant="outline">View All</Button>
+        </Link>
+      </div>
     </Container>
   );
 };
