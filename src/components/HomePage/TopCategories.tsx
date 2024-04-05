@@ -42,7 +42,7 @@ const TopCategories = () => {
               <h2 className="text-white text-lg font-medium">
                 Baby nutrition milk
               </h2>
-              <Link href={"/products?category=milk"}>
+              <Link href={"/infant-nutrition?category=milk"}>
                 <Button variant="outline" className="rounded-full">
                   Get All
                 </Button>
@@ -66,7 +66,7 @@ const TopCategories = () => {
                 <h2 className="text-white text-lg font-medium">
                   Baby scan cosmetics
                 </h2>
-                <Link href={"/products?category=cosmetics"}>
+                <Link href={"/infant-nutrition?category=cosmetics"}>
                   <Button variant="outline" className="rounded-full">
                     Get All
                   </Button>
@@ -89,7 +89,7 @@ const TopCategories = () => {
                 <h2 className="text-white text-lg font-medium">
                   Baby Diapers pant
                 </h2>
-                <Link href={"/products?category=diapers"}>
+                <Link href={"/infant-nutrition?category=diapers"}>
                   <Button variant="outline" className="rounded-full">
                     Get All
                   </Button>
@@ -113,7 +113,7 @@ const TopCategories = () => {
               <h2 className="text-white text-lg font-medium">
                 Baby body Shampoo
               </h2>
-              <Link href={"/products?category=shampoo"}>
+              <Link href={"/infant-nutrition?category=shampoo"}>
                 <Button variant="outline" className="rounded-full">
                   Get All
                 </Button>
@@ -123,7 +123,7 @@ const TopCategories = () => {
         </div>
       </div>
       <div className="text-center mt-10">
-        <Link href={"/products"}>
+        <Link href={"/infant-nutrition"}>
           <Button variant="outline">View All</Button>
         </Link>
       </div>

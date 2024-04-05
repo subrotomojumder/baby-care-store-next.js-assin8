@@ -33,7 +33,7 @@ const Navbar = () => {
         "sticky top-0 left-0 w-full z-[999] py-1 md:py-2 transition-all duration-300 bg-blue-400 "
       )}
     >
-      <nav className="h-full w-full max-w-7xl mx-auto flex justify-between items-center px-4 md:px-[30px] 2xl:px-0">
+      <nav className="h-full w-full max-w-[1480px] mx-auto flex justify-between items-center px-4 md:px-[30px] ">
         <Link href={"/"}>
           <div className="flex justify-start items-center">
             <div className="max-w-24 md:max-w-28">

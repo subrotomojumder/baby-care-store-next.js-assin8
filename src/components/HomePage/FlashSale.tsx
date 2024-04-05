@@ -15,7 +15,7 @@ const FlashSale = async () => {
           <Button variant="outline">View All</Button>
         </Link>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 py-10">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 py-10">
         {flashSaleProducts.map((product: TProduct) => (
           <FlashProductCard key={product._id} product={product} />
         ))}

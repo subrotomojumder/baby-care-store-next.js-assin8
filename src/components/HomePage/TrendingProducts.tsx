@@ -27,11 +27,11 @@ const TrendingProducts = async () => {
             curated to ensure the utmost comfort and safety for your little one.
           </p>
         </div>
-        <Link href={"/products"}>
+        <Link href={"/infant-nutrition"}>
           <Button variant="outline">View All</Button>
         </Link>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 py-10">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 py-10">
         {trendingProducts.map((product: TProduct) => (
           <ProductCard key={product._id} product={product} />
         ))}

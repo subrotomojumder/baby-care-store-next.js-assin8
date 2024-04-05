@@ -8,7 +8,7 @@ import { Button } from "./button";
 const FlashProductCard = ({ product }: { product: TProduct }) => {
   return (
     <div className="bg-white border border-slate-100 hover:border-slate-50 shadow hover:shadow-md shadow-accent group rounded transition-all">
-      <Link href={`products/${product._id as string}`}>
+      <Link href={`infant-nutrition/${product._id as string}`}>
         <div className="relative">
           <div className="rounded-t">
             <Image

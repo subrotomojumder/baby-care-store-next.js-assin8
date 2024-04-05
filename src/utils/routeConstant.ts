@@ -4,12 +4,12 @@ export const navRoutes = [
     name: "Home",
   },
   {
-    path: "/products",
-    name: "Products",
-  },
-  {
     path: "/flash-sale",
     name: "Flash-Sale",
+  },
+  {
+    path: "/Products",
+    name: "Infant-Nutrition",
   },
   {
     path: "/dashboard",

@@ -13,7 +13,7 @@ import {
 const ProductCard = ({ product }: { product: TProduct }) => {
   return (
     <div className="bg-white border border-slate-100 hover:border-slate-50 shadow hover:shadow-lg shadow-accent group rounded transition-all">
-      <Link href={`products/${product._id as string}`}>
+      <Link href={`infant-nutrition/${product._id as string}`}>
         <div className="group-hover:opacity-80 rounded-t">
           <Image
             src={product.images[0]}
