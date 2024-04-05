@@ -28,7 +28,7 @@ const ProductDetailsImage = ({ images, className }: TProductImageProps) => {
               src={image}
               width={100}
               height={200}
-              alt=""
+              alt="image"
               className="w-full h-full"
             />
           </div>
@@ -39,7 +39,7 @@ const ProductDetailsImage = ({ images, className }: TProductImageProps) => {
           src={images[imageIndex]}
           width={500}
           height={500}
-          alt=""
+          alt="image"
           className="w-full h-full"
         />
       </div>

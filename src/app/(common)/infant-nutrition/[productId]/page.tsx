@@ -23,7 +23,7 @@ const ProductDetails = async ({ params }: TProductDetailsProps) => {
   return (
     <Container className="pt-5 lg:pt-8 pb-8 lg:pb-10">
       <p className="font-semibold text-sm">Infant Nutrition &gt; Product</p>
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 py-4">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-7 lg:gap-5 py-4">
         <ProductDetailsImage images={product.images} />
         <div className="p-2 space-y-7">
           <div className="space-y-3">
