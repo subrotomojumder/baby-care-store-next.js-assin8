@@ -26,7 +26,7 @@ const Navbar = () => {
   useEffect(() => {
     setIsOpen(false);
   }, [path]);
-  
+
   return (
     <header
       className={cn(
@@ -86,17 +86,18 @@ const Navbar = () => {
             className="flex flex-col text-end divide-y divide-gray-500 absolute right-0 top-12 md:top-16 bg-white dark:bg-slate-600 py-2 px-4"
           >
             {navRoutes.map((item: TNavItem, i) => (
-              <li
-                className={cn(
-                  "rounded-[2px] hover:bg-sky-500/80 hover:text-white font-[500] px-4 py-2",
-                  {
-                    "transition-all": isOpen,
-                  }
-                )}
-                key={i}
-              >
-                <Link href={item.path}>{item.name}</Link>
-              </li>
+              <Link href={item.path} key={i}>
+                <li
+                  className={cn(
+                    "rounded-[2px] hover:bg-sky-500/80 hover:text-white font-[500] px-4 py-2",
+                    {
+                      "transition-all": isOpen,
+                    }
+                  )}
+                >
+                  {item.name}
+                </li>
+              </Link>
             ))}
             <li className="py-2">
               <Link href={"#login"}>

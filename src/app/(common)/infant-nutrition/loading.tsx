@@ -4,10 +4,8 @@ import { Skeleton } from "@/components/ui/skeleton";
 import { TProduct } from "@/types/products";
 
 const LoadingPage = async () => {
-  const res = await fetch(`${process.env.SERVER_URL}/products?limit=8`, {
-    cache: "no-store",
-  });
-  const { data: flashSaleProducts } = await res.json();
+  const res = await fetch(`${process.env.SERVER_URL}/products?limit=8`);
+  const { data: products } = await res.json();
   return (
     <Container>
       <div className="flex items-center space-x-4">
@@ -18,7 +16,7 @@ const LoadingPage = async () => {
         </div>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 py-8 place-content-center">
-        {flashSaleProducts.map((product: TProduct) => (
+        {products.map((product: TProduct) => (
           <SkeletonCard key={product._id} />
         ))}
       </div>

@@ -1,9 +1,9 @@
 "use client";
 import ReactStars from "react-stars";
 
-const Rating = ({ rate }: { rate: number }) => {
+const Rating = ({ rate, size }: { rate: number; size?: number }) => {
   const firstExample = {
-    size: 20,
+    size: size || 20,
     count: Number(rate),
     edit: false,
     half: true,

@@ -1,36 +1,38 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Baby Care Store
 
-## Getting Started
+### Frontend Live Link : [https://baby-care-sotre-frontend.vercel.app](https://baby-care-sotre-frontend.vercel.app)
 
-First, run the development server:
+### Live Server Link : [https://baby-care-server-eight.vercel.app](https://baby-care-server-eight.vercel.app)
+
+
+### Features
+
+- Welcome to our Baby Care Flash Sale! Discover incredible discounts on essential products for your little one. Hurry, limited time only. Stock up on diapers, formula, toys, and more. Don't miss out on this opportunity to save big on baby essentials!
+
+### Used technology
+
+- next.js + typescript 
+- tailwind + shadcn
+- sonner
+- react-countdown time
+- react-stars
+
+### Needed for Run locally
+
+- First of all clone my github repo. then install all the package.
+- Install all the package. Go to terminal and than command.
+
+
+```bash
+npm i
+```
+
+## Configuration:
+- Environment Variables:
+  - `SERVER_URL`: URI for MongoDB database.
+
+- After run npm run dev to start the server.
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.

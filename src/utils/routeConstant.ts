@@ -8,8 +8,8 @@ export const navRoutes = [
     name: "Flash-Sale",
   },
   {
-    path: "/Products",
-    name: "Infant-Nutrition",
+    path: "/infant-nutrition",
+    name: "Products",
   },
   {
     path: "/dashboard",
