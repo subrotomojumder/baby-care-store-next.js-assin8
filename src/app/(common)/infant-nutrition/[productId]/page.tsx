@@ -1,14 +1,7 @@
 import Container from "@/components/Container";
 import ProductDetailsImage from "@/components/Products/ProductDetailsImage";
 import Rating from "@/components/ui/Rating";
-import { Button } from "@/components/ui/button";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-} from "@/components/ui/carousel";
 import { Car, Repeat1 } from "lucide-react";
-import Image from "next/image";
 
 type TProductDetailsProps = {
   params: {
@@ -55,7 +48,7 @@ const ProductDetails = async ({ params }: TProductDetailsProps) => {
           </div>
         </div>
       </div>
-      <div className="space-y-5 mt-8">
+      <div className="space-y-5 my-8">
         <h5 className="text-xl font-semibold text-gray-700">Description:</h5>
         <p className="text-sm font-medium text-gray-600">
           Welcome to our exclusive Baby Care Flash Sale! Explore unbeatable

@@ -1,7 +1,7 @@
 import Container from "@/components/Container";
 import { Skeleton } from "@/components/ui/skeleton";
 
-const LoadingPage1 = async () => {
+const LoadingPage= async () => {
   return (
     <Container className="flex justify-center">
       <div className="flex flex-col space-y-5">
@@ -18,4 +18,4 @@ const LoadingPage1 = async () => {
   );
 };
 
-export default LoadingPage1;
+export default LoadingPage;
