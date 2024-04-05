@@ -10,8 +10,9 @@ import Link from "next/link";
 
 const TopCategories = () => {
   return (
-    <Container>
-      <div>
+    <Container className="">
+      <div
+      >
         <h2
           className={cn(
             "text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-3"

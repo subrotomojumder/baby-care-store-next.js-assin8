@@ -1,5 +1,5 @@
 "use client";
-import { MouseEvent, useRef, useState } from "react";
+import { MouseEvent, useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
@@ -7,12 +7,14 @@ import logoImage from "@/assets/images/logo.png";
 import { Button } from "../ui/button";
 import { AlignJustify } from "lucide-react";
 import { navRoutes } from "@/utils/routeConstant";
+import { usePathname } from "next/navigation";
 
 export type TNavItem = {
   name: string;
   path: string;
 };
 const Navbar = () => {
+  const path = usePathname();
   const [isOpen, setIsOpen] = useState(false);
   const containerRef = useRef<HTMLUListElement>(null);
   const handleOutsideClose = (e: MouseEvent) => {
@@ -21,6 +23,10 @@ const Navbar = () => {
     }
   };
 
+  useEffect(() => {
+    setIsOpen(false);
+  }, [path]);
+  
   return (
     <header
       className={cn(
